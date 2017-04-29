@@ -61,17 +61,7 @@ typeof(e2)
 # [1] "double"
 ```
 
-This means that parsing a numerical literal and then deparsing it might return a different literal that when parsed again will result in a different value.
-in code:
-
-```r
-source <- "10002.12131"
-ast <- parse(source)
-source2 <- deparse(ast)
-ast2 <- parse(source2)
-
-eval(ast) != eval(ast2)
-```
+This means that parsing a numerical literal and then deparsing it might return a different literal that when parsed again will result in a different value (e.g. [code](./num-literal-problem.R)).
 
 ## Promise
 
