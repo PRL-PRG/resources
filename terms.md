@@ -32,7 +32,7 @@ Expressions values can be of SEXP types: LANGSXP, REALSXP, ...? (TODO)
 #### Examples with quote
 
 ```r
-e1 <- quote(x + 3)
+e1 <- quote(x + 42)
 typeof(e1)
 # [1] "language"
 e1[[1]]
@@ -44,7 +44,7 @@ e1[[2]]
 typeof(e1[[2]])
 # [1] "symbol"
 e1[[3]]
-# [1] 3
+# [1] 42
 typeof(e1[[3]])
 # [1] "double"
 ```
