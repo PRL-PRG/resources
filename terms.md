@@ -1,7 +1,15 @@
 
 ## Variable
 
-name that is bound to a value inside an environment
+The key of a binding in an environment.
+
+### Example
+
+```r
+x <- 3
+```
+
+in the above code x is a variable in the environemnt that can be retrieved by `environment()`.
 
 ## Value
 
