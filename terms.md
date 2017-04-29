@@ -21,7 +21,39 @@ same as [Value](#value)
 
 ## Expression 
 
-language objects or vector of language objects
+SEXP value representing an AST.
+Stored as a list where the first element is the operator and the following are arguments.
+It is typicaly retrieved either by quoting or deparsing.
+
+Expressions values can be of SEXP types: LANGSXP, REALSXP, ...? (TODO)
+
+### Example
+
+#### Examples with quote
+
+```r
+e1 <- quote(x + 3)
+typeof(e1)
+# [1] "language"
+e1[[1]]
+# `+`
+typeof(e1[[1]])
+# [1] "symbol"
+e1[[2]]
+# x
+typeof(e1[[2]])
+# [1] "symbol"
+e1[[3]]
+# [1] 3
+typeof(e1[[3]])
+# [1] "double"
+```
+
+```r
+e2 <- quote(3)
+typeof(e2)
+# [1] "double"
+```
 
 ## Promise
 
