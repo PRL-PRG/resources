@@ -17,7 +17,7 @@ Any SEXP
 
 ## Object
 
-same as Value
+same as [Value](#value)
 
 ## Expression 
 
