@@ -61,7 +61,7 @@ typeof(e2)
 # [1] "double"
 ```
 
-This means that parsing a numerical literal and then deparsing it might return a different literal that when parsed again will result in a different value (e.g. [code](./num-literal-problem.R)).
+This means that parsing a numerical literal and then deparsing it might return a different literal that when parsed again will result in a different value (e.g. [code](./snippets/num-literal-problem.R)).
 
 ## Promise
 
