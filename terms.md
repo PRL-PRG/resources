@@ -49,6 +49,8 @@ typeof(e1[[3]])
 # [1] "double"
 ```
 
+`e1` is going to be equal to `as.language(list(symbol("+"), symbol("x"), 42))`.
+
 ### Warning
 
 The AST of a number is the number itself and not some special value to represent lexical elements representing number literals.
