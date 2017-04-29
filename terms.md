@@ -49,10 +49,26 @@ typeof(e1[[3]])
 # [1] "double"
 ```
 
+### Warning
+
+The AST of a number is the number itself and not some special value to represent lexical elements representing number literals.
+
 ```r
 e2 <- quote(3)
 typeof(e2)
 # [1] "double"
+```
+
+This means that parsing a numerical literal and then deparsing it might return a different literal that when parsed again will result in a different value.
+in code:
+
+```r
+source <- "10002.12131"
+ast <- parse(source)
+source2 <- deparse(ast)
+ast2 <- parse(source2)
+
+eval(ast) != eval(ast2)
 ```
 
 ## Promise
