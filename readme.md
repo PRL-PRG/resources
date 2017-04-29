@@ -5,7 +5,7 @@
 
 - [How-R-Searches-And-Finds-Stuff](http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/) - explains how the package mechanism handles environments (namespace env, package env, import env, ...)
 
-# Terms used by this group
+# Other
 
-[terms](./terms.md)
+- [List of terms used by this group](./terms.md)
 
